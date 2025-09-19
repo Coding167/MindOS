@@ -2,4 +2,10 @@
     --wallpaper: url('../assets/images/wallpaper_1.jpg') center/cover no-repeat;
     --taskbar-background: #000000b3;
     --icon-hover-background: #45454599;
+    --window-background: #23272e;
+    --window-shadow: 0 0 10px #00000080;
+    --window-color: #f3f3f3;
+    --window-header-background: #2d323b;
+    --header-button-hover-background: #3a3f4b;
+    --window-border-radius: 10px;
 }

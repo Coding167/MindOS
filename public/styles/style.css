@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
 }
+/* taskbar */
 .taskbar {
     position: fixed;
     bottom: 5px;
@@ -31,4 +32,77 @@
 }
 .taskbar .icon:hover {
     background: var(--icon-hover-background);
+}
+/* window */
+.window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: var(--window-background);
+    border-radius: var(--window-border-radius);
+    box-shadow: var(--window-shadow);
+    display: flex;
+    flex-direction: column;
+    color: var(--window-color);
+    overflow: hidden;
+}
+.window.maximized {
+    width: 100vw;
+    height: 97vh;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+}
+.window.minimized {
+    display: none;
+}
+.window header {
+    height: 40px;
+    background: var(--window-header-background);
+    border-top-left-radius: var(--window-border-radius);
+    border-top-right-radius: var(--window-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.window.maximized header {
+    border-radius: 0;
+}
+.window header .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+.window header .buttons button {
+    height: 100%;
+    outline: none;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.2s;
+}
+.window header .buttons button:hover {
+    background: var(--header-button-hover-background);
+    border-radius: 3px;
+}
+.window header .title {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.window header .title .img {
+    margin-right: 5px;
+}
+.window .frame {
+    flex: 1;
+    overflow: auto;
+    background: #23272e;
 }
