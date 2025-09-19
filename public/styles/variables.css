@@ -1,0 +1,5 @@
+:root {
+    --wallpaper: url('../assets/images/wallpaper_1.jpg') center/cover no-repeat;
+    --taskbar-background: #000000b3;
+    --icon-hover-background: #45454599;
+}

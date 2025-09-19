@@ -1,0 +1,34 @@
+.desktop {
+    background: var(--wallpaper);
+    width: 100vw;
+    height: 100vh;
+}
+.taskbar {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    font-size: 20px;
+    width: fit-content;
+    height: 40px;
+    background-color: var(--taskbar-background);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.taskbar .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.taskbar .icon:hover {
+    background: var(--icon-hover-background);
+}
